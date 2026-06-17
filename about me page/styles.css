@@ -1,0 +1,525 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+html{
+    font-size: 62%;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+/* navbar */
+header{
+    /*margin-top: 20px;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #1b1b1b;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+
+
+/* navbar */
+
+
+.logo{ 
+    font-size: 3rem;
+    color: #967300;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+    
+}
+
+nav a{
+    font-size: 1.6rem;
+    color: aliceblue;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+}
+nav a:hover, a:active{
+    color: #967300;
+    border-bottom: 3px solid #967300;
+
+}
+
+
+
+
+/* home */
+
+
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    display: block;
+}
+.home{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    background-color: #dbdbdb;
+
+}
+
+.home .home-text h1{
+    margin-bottom: 6rem;
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+span{
+    color: #967300;
+
+}
+.home .home-text h3{
+    margin-top: 3rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.home-img{
+    border-radius: 50%;
+
+}
+.home-img img{
+    position: relative;
+    width: 39vw;
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    transition: 0.2s linear;
+
+}
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+
+.home-subtext{
+    font-size: 2.6rem;
+    font-weight: 600;
+    min-height: 280px;
+}
+
+.home-subtext span{
+    position: relative;
+    color: #967300;
+}
+
+
+.home-btn{
+    display: flex;
+    gap: 16px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s solid;
+    margin-right: 15px;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.home-btn a{
+    display: inline-block;
+    padding: 12px 24px;    
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 90px;
+    white-space: nowrap;
+}
+
+.home-btn a:hover,a:active{
+    background-color: #967300;
+    color: #000000;    
+}
+
+
+
+
+/* about me*/
+
+
+
+
+.about-me{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.about-me .about-me-title{
+    border-bottom: 2px solid #967300;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #dbdbdb;
+    transition: 0.5s ease;
+}    
+.about-me .about-me-title:hover{
+    border-bottom: 2px solid #967300;
+    transform: scale(1.1);
+    color: #967300;
+} 
+.about-me .about-me-suptitle-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-me .about-me-suptitle{
+    /*border: 2px solid #967300;*/
+    flex: 1;
+    margin-bottom: 4rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: #dbdbdb;
+    transition: 0.5s ease;    
+}
+.learn-cards .h3-cards h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;    
+}
+.learn-cards .card{
+    background-color: #967300;
+    max-width: 500px;
+    padding: 40px;
+    margin: 1.9rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #695100;
+    transition: transform 0.3s, background-color 0.3s ease
+}
+.learn-cards .card h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #1b1b1b;
+}
+.learn-cards .card p{
+    text-align: left;
+    font-size: 1.8rem;
+    color: #1b1b1b;
+}
+
+.learn-cards .card:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* my projects */
+
+
+
+.my-projects {
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-projects .my-projects-h2 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #967300;
+    transition: 0.5s ease;
+}
+.projects-cards {
+    background-color: #967300;
+    max-width: 500px;
+    padding: 40px;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #695100;
+    transition: transform 0.3s, background-color 0.3s ease
+
+}
+.projects-cards a{
+    color: #1b1b1b;
+}
+
+
+
+
+/* my skills */
+
+
+
+.my-skills{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-skills .my-skills-h2{
+    border-bottom: 2px solid #967300;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #dbdbdb;
+    transition: 0.5s ease;    
+}
+.skills-cards{
+    align-items: flex-start;
+    display: flex;
+    gap: 1rem;    
+}
+.grop{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #967300;
+    padding: 40px;
+}
+.grop-title{
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #dbdbdb;
+    transition: 0.5s ease;  
+    display: inline-block;
+}
+.skills-cards-only{
+    display: flex;
+    gap: 1rem;
+}
+.s-cards{
+    background-color: #967300;
+    max-width: 500px;
+    padding: 40px;
+    margin: 1rem ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #695100;
+    transition: transform 0.3s, background-color 0.3s ease;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.s-cards img{
+    width: 50px;    
+}
+.my-skills .my-skills-h2:hover{
+    border-bottom: 2px solid #967300;
+    transform: scale(1.1);
+    color: #967300;
+}
+.s-cards:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* my certificates */
+
+.my-certificates{
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-certificates-title{
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #967300;
+    transition: 0.5s ease
+}
+
+
+.certificates{
+    align-items: flex-start;
+    display: flex;
+    gap: 1rem; 
+}
+
+.certificate-{
+    flex-direction: column;
+    padding: 40px;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.5s ease;  
+    background-color: #1b1b1b;
+    box-shadow: 0 4px 8px #000000;
+    border-radius: 10px;
+}
+
+.certificate-h3{
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #dbdbdb;
+    transition: 0.5s ease;  
+    display: inline-block;
+}
+
+.certificate-url{
+    gap: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s solid;
+    margin-right: 15px;
+    align-items: center;
+    margin-top: 1rem;
+}
+.certificate-url a{
+    display: inline-block;
+    padding: 12px 24px;    
+    background-color: #967300;
+    color: #ffffff;
+    border-radius: 90px;
+    white-space: nowrap;    
+}
+
+.certificate-url a:hover{
+    display: inline-block;
+    padding: 12px 24px;    
+    background-color: #ffffff;
+    color: #1b1b1b;
+    border-radius: 90px;
+    white-space: nowrap;
+    transform: scale(1.1);    
+}
+
+
+/* */
+
+
+footer{
+    background-color: #1b1b1b;
+
+}
+.end-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+
+.logo-2{
+    font-size: 8rem;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo-2:hover{
+    transform: scale(1.1); 
+    color: #967300;
+    font-size: 7rem;
+}
+
+.contact-icons img{
+    width: 50px;
+    margin-top: 12px;
+
+}
+.contact{
+    transition: transform 0.3s, background-color 0.3s ease;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.all a{
+    color: #967300;
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-left: 10px ;
+    font-weight: 300;
+
+}
+.contact-sec h3 ,.content h3{
+    font-size: 3rem;
+    color: #dbdbdb;
+    font-weight: 600;
+}
+.content-links a{
+    display:block;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.content-links a:hover{
+    color: #000000;
+    transform: scale(1,1);
+}
+
+.contact-icons img:hover{
+    width: 60px;
+    transform: 0.6;
+}
+
+/* --- التصميم المتجاوب للهواتف --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* تصغير حجم الخط العام للشاشات الصغيرة */
+    }
+
+    header {
+        padding: 1rem 3%;
+    }
+
+    /* جعل قسم الـ Home عمودياً */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 10rem;
+    }
+
+    .home-img img {
+        width: 70vw; /* تكبير الصورة قليلاً في الشاشات الصغيرة */
+    }
+
+    /* تحسين عرض الكروت لتكون فوق بعضها */
+    .skills-cards, .certificates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grop {
+        border-right: none;
+        border-bottom: 2px solid #967300;
+        align-items: center;
+    }
+
+    .skills-cards-only {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me, .my-projects, .my-skills, .my-certificates {
+        padding: 5rem 3%;
+    }
+}
+
